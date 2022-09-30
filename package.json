@@ -1,0 +1,23 @@
+{
+  "name": "coding-school-forms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch src/scss/index.scss public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xaverama/coding-school-forms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xaverama/coding-school-forms/issues"
+  },
+  "homepage": "https://github.com/xaverama/coding-school-forms#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
