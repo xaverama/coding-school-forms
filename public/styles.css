@@ -311,4 +311,123 @@ template {
   box-sizing: border-box;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+header {
+  background-color: #199fbe;
+  position: sticky;
+  top: 0;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+header .logo {
+  background-image: url("img/derzoo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100px;
+  width: 100px;
+}
+header ul {
+  display: flex;
+}
+header li {
+  padding: 0 1rem;
+}
+header li a {
+  color: white;
+  font-size: 1.5rem;
+}
+header li a:hover {
+  border-bottom: 2px solid white;
+}
+header li:nth-child(even) {
+  border-left: 2px solid white;
+}
+header li:nth-child(3) {
+  border-left: 2px solid white;
+}
+
+#hero {
+  height: 600px;
+}
+
+.fade-image {
+  height: 600px;
+  background-color: blue;
+  background-image: url("img/otter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  animation-name: image-switcher;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-box {
+  padding: 4rem;
+  background-color: hsla(0deg, 0%, 100%, 0.653);
+}
+
+@keyframes image-switcher {
+  0% {
+    background-image: url("img/otter.jpg");
+  }
+  50% {
+    background-image: url("img/tiger.jpg");
+  }
+  75% {
+    background-image: url("img/red-panda.jpg");
+  }
+  100% {
+    background-image: url("img/otter.jpg");
+  }
+}
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}
+
+article {
+  text-align: justify;
+}
+
+.about-testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.about-testimonials-item {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=styles.css.map */

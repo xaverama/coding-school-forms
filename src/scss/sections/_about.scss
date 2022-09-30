@@ -1,0 +1,29 @@
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+
+}
+article {
+    text-align: justify;
+}
+
+.about-testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+
+    &-item {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}

@@ -1,0 +1,42 @@
+#hero {
+    height: 600px;
+}
+
+.fade-image {
+    height: 600px;
+    background-color: blue;
+    background-image: url("img/otter.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation-name: image-switcher;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.message-box {
+    padding: 4rem;
+    background-color: $transparent-white;
+}
+
+@keyframes image-switcher {
+    0% {
+        background-image: url("img/otter.jpg");
+    }
+
+    50% {
+        background-image: url("img/tiger.jpg");
+    }
+
+    75% {
+        background-image: url("img/red-panda.jpg");
+    }
+
+    100% {
+        background-image: url("img/otter.jpg");
+    }
+}
